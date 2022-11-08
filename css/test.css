@@ -1,3 +1,5 @@
+/* UTILITIES */
+
 a {
   text-decoration: none;
 }
@@ -19,12 +21,9 @@ li {
   background: #2a303c;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
 }
-.nav-links {
-  padding-top: 1rem;
-}
 .nav-links a {
-  font-family: cursive;
   color: #fff;
+  font-family: cursive;
 }
 /* LOGO */
 .logo {
@@ -148,12 +147,6 @@ input[type="checkbox"] {
 #technology h1 {
   padding: 2rem 0;
 }
-#technology .item-3 {
-  margin-right: 1rem;
-}
-.section-content-item-text svg {
-  margin-left: 2rem;
-}
 .items ul {
   list-style: none;
 }
@@ -166,24 +159,4 @@ input[type="checkbox"] {
   margin: 2rem 0;
   padding-left: 4rem;
   font-size: 2.5rem;
-}
-#portfolio .portfolio-overlay {
-  position: relative;
-}
-.item-text {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  display: flex;
-  align-items: center;
-  color: aliceblue;
-}
-.item-text svg {
-  border-radius: 50%;
-  padding: 5px;
-  border: 1px solid #fff;
-}
-.item-text svg:hover {
-  fill: red;
 }
