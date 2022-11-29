@@ -52,6 +52,7 @@ h5 {
 /* start all section */
 #work,
 #about,
+#technology,
 #portfolio,
 #contact {
   padding-top: 100px;
@@ -169,20 +170,32 @@ h5 {
 
 /* start home */
 #home {
-  background: #2a303c;
+  /* background: #2a303c; */
   background-size: cover;
   background-repeat: no-repeat;
   padding-top: 120px;
   padding-bottom: 140px;
   text-align: center;
 }
-#home h1 {
-  border: 2px solid #d43f52;
-  color: #d43f52;
-  display: inline-block;
-  letter-spacing: 6px;
-  padding: 25px 35px;
-  margin: 30px 0;
+
+.text-gradient {
+  background: -webkit-gradient(
+    linear,
+    left top,
+    right top,
+    from(#ff0000),
+    to(#2100f5)
+  );
+  background: linear-gradient(to right, #ff0000, #2100f5);
+  background: -webkit-linear-gradient(to right, #ff0303, #2100f5);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background-clip: text;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  font-size: 5rem;
+  letter-spacing: 3px;
+  font-family: "Roboto", sans-serif;
 }
 #home h2 {
   padding-bottom: 10px;
@@ -242,6 +255,9 @@ h5 {
 /* end work */
 
 /* start about */
+#about {
+  margin-top: 2rem;
+}
 #about h4 {
   padding: 15px 0;
   color: #d43f52;
