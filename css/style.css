@@ -4,6 +4,73 @@ a {
 li {
   list-style: none;
 }
+#loader {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  z-index: 1;
+  width: 120px;
+  height: 120px;
+  margin: -76px 0 0 -76px;
+  border: 16px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 16px solid #3498db;
+  -webkit-animation: spin 2s linear infinite;
+  animation: spin 2s linear infinite;
+}
+
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* Add animation to "page content" */
+.animate-bottom {
+  position: relative;
+  -webkit-animation-name: animatebottom;
+  -webkit-animation-duration: 1s;
+  animation-name: animatebottom;
+  animation-duration: 1s;
+}
+
+@-webkit-keyframes animatebottom {
+  from {
+    bottom: -100px;
+    opacity: 0;
+  }
+  to {
+    bottom: 0px;
+    opacity: 1;
+  }
+}
+
+@keyframes animatebottom {
+  from {
+    bottom: -100px;
+    opacity: 0;
+  }
+  to {
+    bottom: 0;
+    opacity: 1;
+  }
+}
+
+#myDiv {
+  display: none;
+}
 /* NAVBAR STYLING STARTS */
 .navbar {
   position: fixed;
@@ -15,19 +82,26 @@ li {
   justify-content: space-between;
   height: 60px;
   z-index: 9999;
-  padding: 0 5%;
   background: #3333;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+}
+.navbar .logo {
+  padding-top: 1.3rem;
+  font-size: 2rem;
+  font-family: "Josefin Sans", sans-serif;
+  color: #f3f3f3;
+  font-weight: normal;
 }
 .nav-links {
   padding-top: 1rem;
 }
 
 .nav-links a {
-  font-size: 1.7rem;
+  font-size: 1.4rem;
   font-family: "Roboto", sans-serif;
   letter-spacing: 2px;
   color: #fff;
+  font-weight: 300 !important;
 }
 /* LOGO */
 .logo {
@@ -86,6 +160,7 @@ input[type="checkbox"] {
   display: none;
   font-size: 24px;
   user-select: none;
+  cursor: pointer;
 }
 /* APPLYING MEDIA QUERIES */
 @media (max-width: 768px) {
