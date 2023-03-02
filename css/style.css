@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,900;1,100;1,400;1,500&display=swap");
 a {
   text-decoration: none;
 }
@@ -6,29 +7,19 @@ li {
 }
 #loader {
   position: absolute;
-  left: 50%;
   top: 50%;
-  z-index: 1;
-  width: 120px;
-  height: 120px;
-  margin: -76px 0 0 -76px;
-  border: 16px solid #f3f3f3;
+  left: 50%;
+  width: 48px;
+  height: 48px;
+  border: 5px solid #fff;
+  border-bottom-color: #ff3d00;
   border-radius: 50%;
-  border-top: 16px solid #3498db;
-  -webkit-animation: spin 2s linear infinite;
-  animation: spin 2s linear infinite;
+  display: inline-block;
+  box-sizing: border-box;
+  animation: rotation 1s linear infinite;
 }
 
-@-webkit-keyframes spin {
-  0% {
-    -webkit-transform: rotate(0deg);
-  }
-  100% {
-    -webkit-transform: rotate(360deg);
-  }
-}
-
-@keyframes spin {
+@keyframes rotation {
   0% {
     transform: rotate(0deg);
   }
@@ -86,22 +77,30 @@ li {
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
 }
 .navbar .logo {
-  padding-top: 1.3rem;
-  font-size: 2rem;
+  padding-top: 1rem;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 2.5rem;
+  color: #ffffff;
+  letter-spacing: 1px;
   font-family: "Josefin Sans", sans-serif;
-  color: #f3f3f3;
-  font-weight: normal;
+}
+.flex-contact {
+  display: flex;
+}
+.autom {
+  margin-left: auto;
 }
 .nav-links {
   padding-top: 1rem;
 }
 
 .nav-links a {
-  font-size: 1.4rem;
-  font-family: "Roboto", sans-serif;
-  letter-spacing: 2px;
+  font-size: 14px;
+  font-weight: 600;
+  font-family: "Josefin Sans", sans-serif;
+  letter-spacing: 1px;
   color: #fff;
-  font-weight: 300 !important;
 }
 /* LOGO */
 .logo {
@@ -109,6 +108,7 @@ li {
   width: 60px;
   height: 60px;
   cursor: pointer;
+  font-family: italic;
 }
 /* NAVBAR MENU */
 .menu {
@@ -117,9 +117,10 @@ li {
   font-size: 18px;
 }
 .menu li a:hover {
+  text-decoration: none;
+
   color: #8765fa;
   border-radius: 5px;
-  transition: 0.3s ease;
 }
 .menu li {
   padding: 5px 14px;
@@ -387,7 +388,21 @@ input[type="checkbox"] {
 
 
 ===========================*/
-
+footer {
+  border-top: 1px solid rgba(249, 243, 237, 0.2);
+  padding-top: 1rem !important;
+}
+footer .flex {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 15%;
+}
+footer .flex p {
+  padding: 1rem 0;
+}
+footer .flex ul {
+  padding: 1rem 0;
+}
 .tech-cube {
   display: flex;
   flex-direction: row;

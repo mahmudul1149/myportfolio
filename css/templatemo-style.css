@@ -334,7 +334,7 @@ h5 {
 #contact .fa {
   border: 2px solid #ffffff;
   border-radius: 50%;
-  color: #d43f52;
+  color: #fff;
   width: 50px;
   height: 50px;
   line-height: 45px;
@@ -366,15 +366,7 @@ h5 {
 /* end contact */
 
 /* start footer */
-footer {
-  border-top: 1px solid #090909;
-  text-align: center;
-  padding-top: 40px;
-  padding-bottom: 20px;
-}
-footer hr {
-  width: 100px;
-}
+
 /* end footer */
 
 /* start social icon */
@@ -388,14 +380,15 @@ footer hr {
   list-style: none;
 }
 .social-icon li a {
+  font-size: 2rem;
   border-radius: 50%;
-  color: #606060;
+  color: rgb(171, 166, 166);
   text-decoration: none;
   transition: all 0.4s ease-in-out;
   text-align: center;
-  margin-right: 10px;
+  margin-right: 20px;
 }
 .social-icon li a:hover {
-  color: #d43f52;
+  color: #fff;
 }
 /* end social icon */
