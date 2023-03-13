@@ -5,7 +5,6 @@ Lavish HTML CSS Template
 https://templatemo.com/tm-458-lavish
 		
 */
-
 body {
   background: #000000;
   color: #999;
@@ -35,7 +34,6 @@ footer .fp-slide,
 footer .fp-tableCell {
   height: auto !important;
 }
-
 /* end all section */
 
 /* start all heading */
@@ -57,6 +55,9 @@ h5 {
 #contact {
   padding-top: 100px;
   padding-bottom: 120px;
+}
+.mrt {
+  padding-bottom: 3rem !important;
 }
 /* end all section */
 
@@ -300,7 +301,7 @@ h5 {
   margin-bottom: 30px;
 }
 #portfolio .portfolio-thumb .portfolio-overlay {
-  background: #d43f52;
+  background: linear-gradient(to bottom, #e66f6e 0%, #16c024 100%);
   top: 0;
   left: 0;
   right: 0;
@@ -309,7 +310,7 @@ h5 {
   width: 100%;
   height: 100%;
   position: absolute;
-  padding-top: 60px;
+  padding-top: 45px;
   transition: all 0.4s ease-in-out;
 }
 #portfolio .portfolio-thumb:hover .portfolio-overlay {

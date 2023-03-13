@@ -5,6 +5,25 @@ a {
 li {
   list-style: none;
 }
+
+.text-container .title {
+  font-size: 18px;
+  color: white;
+  font-weight: 400;
+  display: block;
+  font-family: Nunito, sans-serif;
+}
+.text-container .clone {
+  color: #000000;
+  font-weight: 700;
+  font-size: 24px;
+  font-family: Poppins, sans-serif;
+  text-transform: uppercase;
+  display: block;
+}
+.item-text {
+  margin-top: 2.9rem;
+}
 #loader {
   position: absolute;
   top: 50%;
@@ -545,4 +564,14 @@ footer .flex ul {
 
 .cube > div {
   transition: transform 0.2s ease-in;
+}
+/* .portfolio-thumb {
+  width: 100%;
+  height: 250px;
+} */
+.img-responsive {
+  width: 100%;
+  height: 200px;
+  background-size: cover;
+  background-position: center;
 }
