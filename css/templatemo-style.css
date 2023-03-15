@@ -343,26 +343,31 @@ h5 {
   margin-right: 20px;
 }
 #contact .form-control {
-  background: transparent;
-  border: 2px solid #999;
+  background: #181818;
+  /* border: 2px solid #999; */
+  /* border: 1px solid #ccc; */
+  /* border: none; */
   border-radius: 0;
   box-shadow: none;
-  color: #181818;
+  color: white;
   margin-bottom: 20px;
+}
+#contact .form-control:focus {
+  border: 1px dotted;
 }
 #contact input {
   height: 50px;
 }
 #contact input[type="submit"] {
-  background: #d43f52;
-  border: 2px solid transparent;
+  background: #000000;
+  border: 1px solid #ffffff;
   color: #ffffff;
   font-weight: bold;
   transition: all 0.4s ease-in-out;
 }
 #contact input[type="submit"]:hover {
   background: #ffffff;
-  color: #d43f52;
+  color: #000000;
 }
 /* end contact */
 
