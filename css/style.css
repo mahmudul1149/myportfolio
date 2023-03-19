@@ -536,7 +536,9 @@ footer .flex ul {
 .cube {
   animation: rotate 10s infinite linear;
 }
-
+.rotate {
+  height: 1rem;
+}
 /* adding hover effect */
 .tech-cube:hover .front {
   transform: translateZ(200px);
