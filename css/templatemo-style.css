@@ -234,7 +234,7 @@ h5 {
 /* end home */
 
 /* start work */
-#work {
+/* #work {
   background: #1a1a1a;
 }
 #work h2 {
@@ -243,7 +243,7 @@ h5 {
 
 #work .media {
   margin-top: 30px;
-}
+} */
 
 #work .media .fa {
   border: 2px solid #ffffff;
@@ -300,14 +300,6 @@ h5 {
 }
 /* end about */
 
-/* start portfolio */
-/* #portfolio {
-  background: #1a1a1a;
-  text-align: center;
-} */
-#portfolio h2 {
-  padding-bottom: 30px;
-}
 #portfolio .portfolio-thumb {
   overflow: hidden;
   position: relative;
@@ -356,7 +348,7 @@ h5 {
   margin-right: 20px;
 }
 #contact .form-control {
-  background: #181818;
+  background: #0000;
   /* border: 2px solid #999; */
   /* border: 1px solid #ccc; */
   /* border: none; */
