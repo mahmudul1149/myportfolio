@@ -88,15 +88,15 @@ li {
   left: 0;
   width: 100%;
   display: flex;
-  align-items: center;
   justify-content: space-between;
   height: 60px;
   z-index: 9999;
-  background: #3333;
+  background: #000000;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
 }
 .navbar .logo {
   padding-top: 1rem;
+  margin-right: 2rem;
   font-style: normal;
   font-weight: 700;
   font-size: 2.5rem;
@@ -192,27 +192,33 @@ input[type="checkbox"] {
     right: 0;
     z-index: 9999;
     left: 0;
-    text-align: center;
-    padding: 16px 0;
+    text-align: left;
+    padding: 16px 30px;
   }
   .menu li:hover {
     display: inline-block;
     background-color: #4c9e9e;
     transition: 0.3s ease;
   }
+
   .menu li + li {
     margin-top: 12px;
   }
+
   input[type="checkbox"]:checked ~ .menu {
     display: block;
   }
   .hamburger {
     display: block;
+    margin-right: 60px;
+  }
+  .logo {
+    margin-right: 150px !important;
   }
   .dropdown {
     left: 50%;
     top: 30px;
-    transform: translateX(35%);
+    transform: translateX(20%);
   }
   .dropdown li:hover {
     background-color: #4c9e9e;
@@ -540,6 +546,17 @@ input[type="checkbox"] {
   #portfolio .items {
     display: grid;
     grid-template-columns: 1fr;
+  }
+  .flex-contact {
+    flex-direction: column;
+    align-items: center;
+  }
+  .autom {
+    margin-right: auto;
+  }
+  footer .flex {
+    flex-direction: column-reverse;
+    align-items: center;
   }
 }
 /*===========================
