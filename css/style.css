@@ -108,9 +108,7 @@ li {
 .flex-contact {
   display: flex;
   align-items: center;
-}
-.autom {
-  margin-left: auto;
+  justify-content: space-between;
 }
 
 .nav-links a {
@@ -233,7 +231,6 @@ input[type="checkbox"] {
   }
   #technology {
     margin: 0;
-    margin-bottom: 800px !important;
   }
 
   .items .section-content-item {
@@ -265,12 +262,11 @@ input[type="checkbox"] {
   list-style: none;
 }
 .items ul li {
-  font-size: 1.4rem;
+  font-size: 20px;
   line-height: 1.4;
-  color: #ffffff;
+  color: #eaecf0;
   font-weight: 800;
   font-family: "Josefin Sans", sans-serif;
-  font-family: "Roboto Mono", monospace;
 }
 .items h4 {
   margin: 1rem 0;
@@ -288,6 +284,20 @@ input[type="checkbox"] {
   .about-area {
     padding-top: 70px;
     padding-bottom: 80px;
+  }
+  .flex-contact {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+@media (max-width: 450px) {
+  .about-area {
+    padding-top: 70px;
+    padding-bottom: 80px;
+  }
+  .flex-contact {
+    flex-direction: column;
+    align-items: center;
   }
 }
 
@@ -332,7 +342,9 @@ input[type="checkbox"] {
 .about-content .single-info .info-text p span {
   color: #32333c;
 }
-
+.about-skills {
+  padding-top: 70px !important;
+}
 .about-skills .skill-item .skill-header {
   position: relative;
 }
@@ -399,6 +411,10 @@ footer .flex {
 }
 footer .flex p {
   padding: 1rem 0;
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 800;
+  color: #ffffff;
+  font-size: 1.1rem;
 }
 footer .flex ul {
   padding: 1rem 0;
@@ -416,8 +432,28 @@ footer .flex ul {
   .tech-cube {
     margin-top: 10vh;
   }
+  footer .flex {
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+  }
+  footer p {
+    padding: 0 0;
+  }
 }
-
+@media (max-width: 450px) {
+  .tech-cube {
+    margin-top: 10vh;
+  }
+  footer .flex {
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+  }
+  footer p {
+    padding: 0 0;
+  }
+}
 .cube {
   margin: auto;
   position: relative;
