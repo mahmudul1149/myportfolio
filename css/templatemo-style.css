@@ -1,16 +1,33 @@
-/*
-
-Lavish HTML CSS Template
-
-https://templatemo.com/tm-458-lavish
-		
-*/
 body {
   background: #000000;
   color: #999;
-  font-family: "Raleway", sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 16px;
   font-weight: 400;
+}
+html,
+article,
+aside,
+canvas,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
 }
 
 /* start all section */
@@ -23,6 +40,7 @@ body {
 #about,
 #about .fp-slide,
 #about .fp-tableCell,
+#technology,
 #contact,
 #contact .fp-slide,
 #contact .fp-tableCell,
@@ -56,6 +74,9 @@ h5 {
   padding-top: 100px;
   padding-bottom: 120px;
 }
+/* #about {
+  padding-top: 160px;
+} */
 .mrt {
   padding-bottom: 3rem !important;
 }
@@ -178,35 +199,40 @@ h5 {
   padding-bottom: 140px;
   text-align: center;
 }
-
-.text-gradient {
-  background: -webkit-gradient(
-    linear,
-    left top,
-    right top,
-    from(#ff0000),
-    to(#2100f5)
-  );
-  background: linear-gradient(to right, #ff0000, #2100f5);
-  background: -webkit-linear-gradient(to right, #ff0303, #2100f5);
-  /* Chrome 10-25, Safari 5.1-6 */
+.text-gradient-color {
+  background: linear-gradient(to right, red, #ffff00ad, green);
   background-clip: text;
   color: transparent;
-  -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   font-size: 60px;
-  font-weight: 700;
+  font-weight: 800;
   line-height: 60px;
+}
+.text-gradients {
+  font-family: "Inter", sans-serif;
 
-  font-family: poppins, sans-serif;
+  background: linear-gradient(
+    to right,
+    rgb(255, 23, 23),
+    yellow,
+    rgb(13, 246, 13)
+  );
+  background-clip: text;
+  color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 60px;
+  font-weight: 800;
+  line-height: 60px;
 }
 .rotate {
   height: 1rem;
 }
 #home h2 {
-  font-family: poppins, sans-serif;
+  font-family: "Josefin Sans", sans-serif;
   padding-bottom: 10px;
-  font-size: 2.5rem;
+  font-size: 2rem;
 }
 #home h3 {
   font-family: poppins, sans-serif;
@@ -275,7 +301,12 @@ h5 {
 }
 #about h4 {
   padding: 15px 0;
-  color: #d43f52;
+  background: linear-gradient(to right, red, yellow, green);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
+  font-size: 25px;
+  font-weight: bold;
 }
 #about .progress {
   border-radius: 4px;
@@ -293,6 +324,13 @@ h5 {
   font-weight: bold;
   display: block;
   padding-bottom: 6px;
+}
+#about p {
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 800;
+  font-size: 1.2rem;
+  line-height: 1.5;
+  color: #ffffff;
 }
 #about small {
   font-weight: bold;
@@ -348,11 +386,8 @@ h5 {
   margin-right: 20px;
 }
 #contact .form-control {
-  background: #0000;
-  /* border: 2px solid #999; */
-  /* border: 1px solid #ccc; */
-  /* border: none; */
-  border-radius: 0;
+  background: #181818;
+  border-radius: 10px;
   box-shadow: none;
   color: white;
   margin-bottom: 20px;
@@ -364,7 +399,7 @@ h5 {
   height: 50px;
 }
 #contact input[type="submit"] {
-  background: #000000;
+  background: #181818;
   border: 1px solid #ffffff;
   color: #ffffff;
   font-weight: bold;
@@ -372,7 +407,7 @@ h5 {
 }
 #contact input[type="submit"]:hover {
   background: #ffffff;
-  color: #000000;
+  color: green;
 }
 /* end contact */
 
@@ -391,7 +426,7 @@ h5 {
   list-style: none;
 }
 .social-icon li a {
-  font-size: 2rem;
+  font-size: 1.5rem;
   border-radius: 50%;
   color: rgb(171, 166, 166);
   text-decoration: none;

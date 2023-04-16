@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,900;1,100;1,400;1,500&display=swap");
+
 a {
   text-decoration: none;
 }
@@ -88,30 +89,28 @@ li {
   left: 0;
   width: 100%;
   display: flex;
+  align-items: center;
   justify-content: space-between;
-  height: 60px;
+  height: 70px;
   z-index: 9999;
   background: #000000;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
 }
 .navbar .logo {
-  padding-top: 1rem;
   margin-right: 2rem;
   font-style: normal;
   font-weight: 700;
-  font-size: 2.5rem;
+  font-size: 1.7rem;
   color: #ffffff;
   letter-spacing: 1px;
   font-family: "Josefin Sans", sans-serif;
 }
 .flex-contact {
   display: flex;
+  align-items: center;
 }
 .autom {
   margin-left: auto;
-}
-.nav-links {
-  padding-top: 1rem;
 }
 
 .nav-links a {
@@ -121,14 +120,7 @@ li {
   letter-spacing: 1px;
   color: #fff;
 }
-/* LOGO */
-.logo {
-  margin-top: 5px;
-  width: 60px;
-  height: 60px;
-  cursor: pointer;
-  font-family: italic;
-}
+
 /* NAVBAR MENU */
 .menu {
   display: flex;
@@ -261,13 +253,10 @@ input[type="checkbox"] {
   justify-content: space-between;
   color: white;
 }
-#technology {
-  margin: 5rem 0;
-  height: 550px !important;
+#technology .items svg {
+  margin-left: 2rem !important;
 }
-#technology h1 {
-  padding: 2rem 0;
-}
+
 #technology .item-3 {
   margin-right: 1rem;
 }
@@ -276,14 +265,17 @@ input[type="checkbox"] {
   list-style: none;
 }
 .items ul li {
-  font-size: 2rem;
-  line-height: 1.8;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 1.4rem;
+  line-height: 1.4;
+  color: #ffffff;
+  font-weight: 800;
+  font-family: "Josefin Sans", sans-serif;
+  font-family: "Roboto Mono", monospace;
 }
 .items h4 {
-  margin: 2rem 0;
-  padding-left: 4rem;
-  font-size: 2.5rem;
+  margin: 1rem 0;
+  padding-left: 2.2rem;
+  font-size: 2rem;
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
@@ -390,175 +382,7 @@ input[type="checkbox"] {
   width: 0;
 }
 /* work-section */
-#portfolio {
-  background: #000000;
-}
 
-#portfolio .container .lead {
-  margin-bottom: 1.5rem;
-}
-
-#portfolio .items {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-gap: 0.8rem;
-  box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.3);
-}
-
-#portfolio .items .item {
-  position: relative;
-  overflow: hidden;
-  background-color: #000;
-  border: 2px solid #f04a68;
-  border-radius: 3px;
-}
-
-#portfolio .items .item .item-text .item-text-wrap .item-text-category {
-  color: #000000;
-}
-
-#portfolio .items .item .item-text .item-text-wrap .item-text-title {
-  margin-top: 1.25rem;
-  color: #000000;
-}
-
-#portfolio .items .item .item-text .item-text-wrap .btn {
-  -webkit-border-radius: 4px;
-  -moz-border-radius: 4px;
-  border-radius: 4px;
-  color: #000;
-  font-family: "Roboto", sans-serif;
-  font-size: 16px;
-  font-weight: bold;
-  padding: 8px 16px;
-  background-color: #ddeff5;
-  -webkit-box-shadow: 1px 1px 20px 0 #f4edee;
-  -moz-box-shadow: 1px 1px 20px 0 #f4edee;
-  box-shadow: 1px 1px 20px 0 #f4edee;
-  text-shadow: 1px 1px 20px #797272;
-  border: solid #101620 1px;
-  text-decoration: none;
-  display: inline-block;
-  cursor: pointer;
-  text-align: center;
-}
-
-#portfolio .items .item .item-text .item-text-wrap .btn:hover {
-  background: #e66f6e;
-  border: solid #15171a 1px;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  border-radius: 5px;
-  text-decoration: none;
-}
-
-#portfolio .items .item .item-text .item-text-wrap .ml-1 {
-  margin-right: 1rem;
-}
-
-#portfolio .items .item::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  display: block;
-  background: linear-gradient(to bottom, #9171fa 0%, #ddeff5 100%);
-  /* background: linear-gradient(to bottom, #e66f6e 0%, #ddeff5 100%); */
-  opacity: 0.9;
-  transform: scale(2) translateX(-75%) translateY(-75%) rotate(60deg);
-  transition: transform 3s cubic-bezier(0.2, 1, 0.3, 1);
-}
-
-#portfolio .items .item:hover:after {
-  transform: scale(2) translateX(0) translateY(0) rotate(28deg);
-}
-
-#portfolio .items .item:hover .item-image {
-  transform: scale(1.2);
-}
-
-#portfolio .items .item:hover .item-text {
-  opacity: 1;
-  transform: scale(1) translateY(0);
-  transition: 500ms;
-  transition-delay: 0.45s;
-}
-
-#portfolio .items .item-image {
-  height: 180px !important;
-  display: block;
-  transform: translateZ(0);
-  transition: transform 750ms cubic-bezier(0.2, 1, 0.3, 1);
-}
-
-#portfolio .items .item-image::before {
-  content: "";
-  display: block;
-  padding-top: 75%;
-  overflow: hidden;
-}
-
-#portfolio .items .item-image img {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100% !important;
-  height: auto;
-  line-height: 0;
-}
-
-#portfolio .items .item-text {
-  opacity: 0;
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  text-align: center;
-  color: #fff;
-  z-index: 1;
-  transform: translateY(-20%);
-  transition: opacity 500ms cubic-bezier(0.2, 1, 0.3, 1),
-    transform 500ms cubic-bezier(0.2, 1, 0.3, 1);
-}
-
-#portfolio.items .item-text-wrap {
-  position: absolute;
-  width: 100%;
-  top: 50%;
-  transform: translateY(-50%);
-}
-
-#portfolio.items .item-text-title {
-  font-size: 2rem;
-  padding: 0.4rem 1rem;
-}
-
-#portfolio.items .item-text-category {
-  text-transform: uppercase;
-  margin: 0;
-  font-size: 1.3rem;
-}
-@media screen and (max-width: 700px) {
-  #portfolio .items {
-    display: grid;
-    grid-template-columns: 1fr;
-  }
-  .flex-contact {
-    flex-direction: column;
-    align-items: center;
-  }
-  .autom {
-    margin-right: auto;
-  }
-  footer .flex {
-    flex-direction: column-reverse;
-    align-items: center;
-  }
-}
 /*===========================
        6.PRICING css cube
 
@@ -566,7 +390,7 @@ input[type="checkbox"] {
 ===========================*/
 footer {
   border-top: 1px solid rgba(249, 243, 237, 0.2);
-  padding-top: 1rem !important;
+  padding-top: 0.5rem !important;
 }
 footer .flex {
   display: flex;
