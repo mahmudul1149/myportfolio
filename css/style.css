@@ -266,7 +266,8 @@ input[type="checkbox"] {
   line-height: 1.4;
   color: #eaecf0;
   font-weight: 800;
-  font-family: "Josefin Sans", sans-serif;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif !important;
 }
 .items h4 {
   margin: 1rem 0;
