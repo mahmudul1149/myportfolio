@@ -1,5 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,900;1,100;1,400;1,500&display=swap");
-
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@1,100&family=Roboto:ital,wght@0,400;0,500;0,900;1,300;1,400;1,500&display=swap");
 a {
   text-decoration: none;
 }
@@ -98,12 +97,11 @@ li {
 }
 .navbar .logo {
   margin-right: 2rem;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 1.7rem;
-  color: #ffffff;
+  font-family: "Inter", sans-serif !important;
+  font-size: 1.8rem;
+  font-weight: 400;
   letter-spacing: 1px;
-  font-family: "Josefin Sans", sans-serif;
+  color: white;
 }
 .flex-contact {
   display: flex;
@@ -113,10 +111,10 @@ li {
 
 .nav-links a {
   font-size: 14px;
-  font-weight: 600;
-  font-family: "Josefin Sans", sans-serif;
+  font-weight: 800;
+  font-family: "Poppins", sans-serif;
   letter-spacing: 1px;
-  color: #fff;
+  color: #d4dde3;
 }
 
 /* NAVBAR MENU */
@@ -168,6 +166,7 @@ input[type="checkbox"] {
 /*HAMBURGER MENU*/
 .hamburger {
   display: none;
+  margin-top: 10px;
   font-size: 24px;
   user-select: none;
   cursor: pointer;
@@ -412,9 +411,9 @@ footer .flex {
 }
 footer .flex p {
   padding: 1rem 0;
-  font-family: "Josefin Sans", sans-serif;
-  font-weight: 800;
-  color: #ffffff;
+  font-family: "Roboto Mono", monospace;
+  font-weight: 600;
+  color: #edf3f6;
   font-size: 1.1rem;
 }
 footer .flex ul {

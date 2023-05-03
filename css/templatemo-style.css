@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@1,100&family=Roboto:ital,wght@0,400;0,500;0,900;1,300;1,400;1,500&display=swap");
+
 body {
   background: #000000;
   color: #999;
@@ -230,9 +232,9 @@ h5 {
   height: 1rem;
 }
 #home h2 {
-  font-family: "Josefin Sans", sans-serif;
+  font-family: "Roboto Mono", monospace;
   padding-bottom: 10px;
-  font-size: 2rem;
+  font-size: 1.7rem;
 }
 #home h3 {
   font-family: poppins, sans-serif;
@@ -338,11 +340,11 @@ h5 {
   padding-bottom: 6px;
 }
 #about p {
-  font-family: "Josefin Sans", sans-serif;
+  font-family: "Roboto Mono", monospace;
   font-weight: 800;
   font-size: 1.2rem;
   line-height: 1.5;
-  color: #ffffff;
+  color: #c4ccdb;
 }
 #about small {
   font-weight: bold;
@@ -389,10 +391,10 @@ h5 {
   color: #ffffff;
 }
 #contact p {
-  font-family: "Josefin Sans", sans-serif;
+  font-family: "Roboto Mono", monospace;
   font-size: 1.2rem;
   letter-spacing: 1px;
-  color: #ffffff;
+  color: #edf3f6;
   font-weight: 600;
 }
 #contact .fa {
