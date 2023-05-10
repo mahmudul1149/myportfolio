@@ -97,10 +97,10 @@ li {
 }
 .navbar .logo {
   margin-right: 2rem;
-  font-family: "Inter", sans-serif !important;
+  font-family: "Montserrat", sans-serif;
   font-size: 1.8rem;
   font-weight: 400;
-  letter-spacing: 1px;
+  letter-spacing: 0.3px;
   color: white;
 }
 .flex-contact {
@@ -110,11 +110,12 @@ li {
 }
 
 .nav-links a {
+  font-family: "Inter", sans-serif;
   font-size: 14px;
-  font-weight: 800;
-  font-family: "Poppins", sans-serif;
-  letter-spacing: 1px;
-  color: #d4dde3;
+  font-weight: 600;
+  opacity: 0.7;
+  letter-spacing: 0.3px;
+  color: rgb(255, 255, 255);
 }
 
 /* NAVBAR MENU */
@@ -261,12 +262,13 @@ input[type="checkbox"] {
   list-style: none;
 }
 .items ul li {
-  font-size: 20px;
-  line-height: 1.4;
-  color: #eaecf0;
-  font-weight: 800;
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-    "Lucida Sans", Arial, sans-serif !important;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 19px;
+  -webkit-transition: text-indent 0.2s;
+
+  color: rgba(255, 255, 255, 0.6745098039);
+  margin-bottom: 1rem;
 }
 .items h4 {
   margin: 1rem 0;
@@ -406,15 +408,16 @@ footer {
 }
 footer .flex {
   display: flex;
+  align-items: center;
   justify-content: space-between;
   padding: 0 15%;
 }
 footer .flex p {
-  padding: 1rem 0;
-  font-family: "Roboto Mono", monospace;
-  font-weight: 600;
-  color: #edf3f6;
-  font-size: 1.1rem;
+  font-family: "Inter", sans-serif;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.556);
+  font-weight: 300;
+  font-size: 1.2rem;
 }
 footer .flex ul {
   padding: 1rem 0;

@@ -501,6 +501,7 @@ body {
 
 #splider1 .slide-content .card .card-contents .project-description {
   line-height: 150%;
+  opacity: 0.6;
 }
 
 #splider1 .slide-content .card .card-contents .card-actions {

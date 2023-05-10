@@ -1,5 +1,8 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@1,100&family=Roboto:ital,wght@0,400;0,500;0,900;1,300;1,400;1,500&display=swap");
-
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Pacifico&family=Righteous&display=swap");
+/* font-family: 'Inter', sans-serif;
+font-family: 'Montserrat', sans-serif;
+font-family: 'Montserrat Alternates', sans-serif;
+font-family: 'Righteous', cursive; */
 body {
   background: #000000;
   color: #999;
@@ -202,7 +205,14 @@ h5 {
   text-align: center;
 }
 .text-gradient-color {
-  background: linear-gradient(to right, red, #ffff00ad, green);
+  font-family: "Inter", sans-serif;
+  background: linear-gradient(
+    90.42deg,
+    rgb(74, 177, 241) 0.58%,
+    rgb(86, 108, 236) 37.22%,
+    rgb(215, 73, 175) 73.87%,
+    rgb(255, 124, 81) 112.26%
+  );
   background-clip: text;
   color: transparent;
   -webkit-background-clip: text;
@@ -232,9 +242,10 @@ h5 {
   height: 1rem;
 }
 #home h2 {
-  font-family: "Roboto Mono", monospace;
-  padding-bottom: 10px;
-  font-size: 1.7rem;
+  font-family: "Montserrat", sans-serif;
+  font-size: 25px;
+  font-weight: 600;
+  opacity: 0.9;
 }
 #home h3 {
   font-family: poppins, sans-serif;
@@ -340,11 +351,12 @@ h5 {
   padding-bottom: 6px;
 }
 #about p {
-  font-family: "Roboto Mono", monospace;
-  font-weight: 800;
-  font-size: 1.2rem;
-  line-height: 1.5;
-  color: #c4ccdb;
+  font-family: "Inter", sans-serif;
+  font-size: 21px;
+  letter-spacing: -0.3px;
+  opacity: 0.8;
+  color: white;
+  font-weight: 300;
 }
 #about small {
   font-weight: bold;
@@ -391,11 +403,10 @@ h5 {
   color: #ffffff;
 }
 #contact p {
-  font-family: "Roboto Mono", monospace;
+  font-family: "Inter", sans-serif;
+  color: rgba(255, 255, 255, 0.556);
+  font-weight: 300;
   font-size: 1.2rem;
-  letter-spacing: 1px;
-  color: #edf3f6;
-  font-weight: 600;
 }
 #contact .fa {
   border: 2px solid #ffffff;
