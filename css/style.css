@@ -105,8 +105,9 @@ li {
   top: 0;
   left: 0;
   width: 100%;
-
+  background: #E7E5DF !important;
   z-index: 9999;
+  overflow: hidden;
 }
 .navbar .logo {
   margin-right: 2rem;
@@ -298,17 +299,18 @@ input[type="checkbox"] {
 }
 .items ul li {
   font-family: "Inter", sans-serif;
-  font-weight: 400;
-  font-size: 19px;
+  font-weight: 500;
+  line-height: 2;
+  font-size: 18px;
   -webkit-transition: text-indent 0.2s;
 
-  color: rgba(255, 255, 255, 0.6745098039);
-  margin-bottom: 1rem;
+  color: #333;
 }
 .items h4 {
   margin: 1rem 0;
   padding-left: 2.2rem;
-  font-size: 2rem;
+  font-size: 1.5rem;
+  color: #115e59;
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
