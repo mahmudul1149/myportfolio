@@ -1,4 +1,18 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@1,100&family=Roboto:ital,wght@0,400;0,500;0,900;1,300;1,400;1,500&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+IT+Moderna:wght@100..400&display=swap');
+
+.resume-button {
+  margin-top: 2rem;
+  color: #fff;
+  background-color: black;
+  padding: 10px 20px;
+  font-size: 18px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+
 a {
   text-decoration: none;
 }
@@ -82,40 +96,61 @@ li {
   display: none;
 }
 /* NAVBAR STYLING STARTS */
+.nav {
+  max-width: 1200px;
+  margin: auto;
+}
 .navbar {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  height: 70px;
+
   z-index: 9999;
-  background: #000000;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
 }
 .navbar .logo {
   margin-right: 2rem;
-  font-family: "Montserrat", sans-serif;
-  font-size: 1.8rem;
-  font-weight: 400;
+  font-family: "Playwrite IT Moderna", cursive;
+  font-size: 2rem;
+  font-weight: 500;
   letter-spacing: 0.3px;
-  color: white;
+  background: -webkit-linear-gradient(
+    90deg,
+    rgba(13, 8, 96, 1) 0%,
+    rgba(9, 9, 121, 1) 21%,
+    rgba(6, 84, 170, 1) 51%,
+    rgba(0, 255, 113, 1) 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  max-width: max-content;
+}
+.navbar .nav-container {
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  height: 70px;
+  align-items: center;
+  justify-content: space-between;
 }
 .flex-contact {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
+.navbar .flex-links {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
 
 .nav-links a {
   font-family: "Inter", sans-serif;
-  font-size: 14px;
+  font-size: 18px;
   font-weight: 600;
   opacity: 0.7;
   letter-spacing: 0.3px;
-  color: rgb(255, 255, 255);
+  color: rgb(17 94 89);
 }
 
 /* NAVBAR MENU */

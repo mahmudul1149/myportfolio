@@ -4,8 +4,8 @@ font-family: 'Montserrat', sans-serif;
 font-family: 'Montserrat Alternates', sans-serif;
 font-family: 'Righteous', cursive; */
 body {
-  background: #000000;
-  color: #999;
+  
+  color: black !important;
   font-family: "Poppins", sans-serif;
   font-size: 16px;
   font-weight: 400;
@@ -76,8 +76,26 @@ h5 {
 #technology,
 #portfolio,
 #contact {
-  padding-top: 100px;
-  padding-bottom: 120px;
+  /* height: 100vh !important; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* padding-top: 150px; */
+}
+
+#home {
+  background: #E7E5DF;
+}
+#about {
+  background-color: white;
+  padding: 12rem 0;
+}
+#technology {
+  background: #E7E5DF;
+  padding: 12rem 0;
+}
+#contact {
+  padding-bottom: 150px;
 }
 /* #about {
   padding-top: 160px;
@@ -203,10 +221,24 @@ h5 {
   padding-top: 120px;
   padding-bottom: 140px;
   text-align: center;
+  height: 100vh !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#home .flex {
+  max-width: 1000px;
+  margin: auto;
+  display: grid;
+  align-items: center;
+  grid-template-columns: 1fr 1fr;
+  text-align: left;
 }
 .text-gradient-color {
   font-family: "Inter", sans-serif;
-  background: linear-gradient(
+  color: rgb(17 94 89);
+  opacity: 0.7;
+  /* background: linear-gradient(
     90.42deg,
     rgb(74, 177, 241) 0.58%,
     rgb(86, 108, 236) 37.22%,
@@ -216,7 +248,7 @@ h5 {
   background-clip: text;
   color: transparent;
   -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  -webkit-text-fill-color: transparent; */
   font-size: 60px;
   font-weight: 800;
   line-height: 60px;
@@ -246,13 +278,15 @@ h5 {
   font-size: 25px;
   font-weight: 600;
   opacity: 0.9;
+  color: black;
 }
 #home h3 {
   font-family: poppins, sans-serif;
   font-size: 40px;
   font-weight: 700;
   line-height: 40px;
-  color: #ffffff;
+  color: black
+  ;
 }
 #home .btn {
   background: transparent;
@@ -321,9 +355,6 @@ h5 {
 /* end work */
 
 /* start about */
-#about {
-  margin-top: 2rem;
-}
 #about h4 {
   padding: 15px 0;
   background: linear-gradient(to right, red, yellow, green);
@@ -345,7 +376,7 @@ h5 {
   padding-top: 50px;
 }
 #about span {
-  color: #ffffff;
+  color: #333;
   font-weight: bold;
   display: block;
   padding-bottom: 6px;
@@ -355,8 +386,8 @@ h5 {
   font-size: 21px;
   letter-spacing: -0.3px;
   opacity: 0.8;
-  color: white;
-  font-weight: 300;
+  color: #333;
+  font-weight: 500;
 }
 #about small {
   font-weight: bold;

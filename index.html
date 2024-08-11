@@ -42,24 +42,36 @@
     <div id="loader"></div>
     <div style="display: none" id="myDiv" class="animate-bottom">
       <div id="fullpage">
+        <div class="navbar">
+          <div class="nav-container">
+            <a class="logo" href="#home">
+              <span>Mahmudul</span>
+            </a>
+            <ul class="flex-links">
+              <li class="nav-links"><a href="#about">About</a></li>
+              <li class="nav-links"><a href="#portfolio">Portfolio</a></li>
+              <li class="nav-links"><a href="/blogs">Blogs</a></li>
+            </ul>
+          </div>
+        </div>
         <!-- start home -->
         <div id="home" class="section">
-          <div class="container">
-            <div class="row">
-              <div class="col-md-2"></div>
-              <div class="col-md-8 wow fadeIn" data-wow-delay="0.9s">
-                <h3>Hello, it's me</h3>
+              <div class="flex  fadeIn" data-wow-delay="0.9s">
+                <div>
+                  <h3>Hello, it's me</h3>
                 <h1 class="text-gradient-color">Mahmudul Islam</h1>
                 <h2
                   class="txt-type rotate"
                   data-wait="3000"
                   data-words='["Front End Developer", "Web Developer"]'
                 ></h2>
-
-                <img src="/images/profile.png" alt="" />
+                <div class="resume-container">
+                  <button id="downloadResume" class="resume-button">Download Resume</button>
               </div>
-              <div class="col-md-2"></div>
-            </div>
+                </div>
+
+                <img style="width: 100%; object-fit: cover;" src="/images/profile.png" alt="" />
+              </div>
           </div>
         </div>
         <!-- end home -->
@@ -77,7 +89,7 @@
                 data-wow-delay="0.9s"
               >
                 <h2>ABOUT ME</h2>
-                <h4>FRONT END DEVELOPER</h4>
+  
 
                 <p>
                   Experienced Frontend Developer at Connekt Studio, skilled in
@@ -622,23 +634,18 @@
       </div>
     </div>
 
-    <!-- jQuery -->
+
     <script src="js/jquery.js"></script>
-    <!-- bootstrap -->
     <script src="js/bootstrap.min.js"></script>
-    <!-- fullpage -->
-    <script src="js/jquery.fullPage.js"></script>
-    <!-- smoothScroll -->
     <script src="js/smoothscroll.js"></script>
-    <!-- wow -->
+
     <script src="js/wow.min.js"></script>
     <script src="js/main.js"></script>
     <script src="js/splide.min.js"></script>
-    <!-- text rotater -->
+
     <script src="js/jquery.simple-text-rotator.js"></script>
     <script src="js/typewriter.js"></script>
-    <!-- custom -->
-    <script src="js/custom.js"></script>
+
     <script src="js/app.js"></script>
   </body>
 </html>
