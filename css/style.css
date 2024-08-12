@@ -2,18 +2,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Playwrite+IT+Moderna:wght@100..400&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Anek+Devanagari:wght@100..800&family=Grey+Qo&family=Playwrite+IT+Moderna:wght@100..400&display=swap');
 
-.resume-button {
-  margin-top: 2rem;
-  color: #fff;
-  background-color: black;
-  padding: 10px 20px;
-  font-size: 18px;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
-
-
 a {
   text-decoration: none;
 }
@@ -95,6 +83,16 @@ li {
 
 #myDiv {
   display: none;
+}
+.resume-button {
+  margin-top: 2rem;
+  color: #fff;
+  background-color: black;
+  padding: 10px 20px;
+  font-size: 18px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 .nav {
   max-width: 1200px;
@@ -439,7 +437,7 @@ input[type="checkbox"] {
 
 ===========================*/
 footer {
-  border-top: 1px solid rgba(249, 243, 237, 0.2);
+  border-top: 1px solid rgba(24, 109, 96, 0.3);
   padding-top: 0.5rem !important;
 }
 footer .flex {
@@ -449,14 +447,20 @@ footer .flex {
   padding: 0 15%;
 }
 footer .flex p {
-  font-family: "Inter", sans-serif;
+  color: #115e59;
+  font-family: "Inter", sans-serif !important;
   text-align: center;
-  color: rgba(255, 255, 255, 0.556);
-  font-weight: 300;
-  font-size: 1.2rem;
+  font-weight: 500;
+  font-size: 1rem;
 }
 footer .flex ul {
   padding: 1rem 0;
+}
+footer ul li a {
+  color: #115e59 !important;
+}
+footer ul li a:hover {
+  color: rgb(11, 179, 162) !important;
 }
 .tech-cube {
   display: flex;

@@ -46,9 +46,9 @@ video {
 #contact,
 #contact .fp-slide,
 #contact .fp-tableCell,
-#portfolio,
-#portfolio .fp-slide,
-#portfolio .fp-tableCell,
+#project,
+#project .fp-slide,
+#project .fp-tableCell,
 footer,
 footer .fp-slide,
 footer .fp-tableCell {
@@ -64,24 +64,20 @@ h5 {
 }
 
 #work,
-#about,
-#technology,
-#portfolio,
+#project,
 #contact {
   display: flex;
   align-items: center;
   justify-content: center;
+  padding-top: 120px;
 
 }
-
-#home {
-  background: #E7E5DF;
+#technology{
+  padding-top: 50px;
 }
-
 #contact {
-  padding-bottom: 150px;
+  padding-bottom: 120px;
 }
-
 .mrt {
   padding-bottom: 3rem !important;
 }
@@ -298,13 +294,18 @@ h5 {
   #work,
   #about,
   #technology,
-  #portfolio,
+  #project,
   #contact {
     padding-top: 50px;
     padding-bottom: 50px;
   }
   #home {
     padding-bottom: 40px;
+    height: auto !important;
+  }
+  #home h1 {
+    font-size: 2.5rem;
+    line-height: 1;
   }
   #home .grid {
     grid-template-columns: 1fr;
@@ -373,12 +374,12 @@ h5 {
 }
 
 
-#portfolio .portfolio-thumb {
+#project .project-thumb {
   overflow: hidden;
   position: relative;
   margin-bottom: 30px;
 }
-#portfolio .portfolio-thumb .portfolio-overlay {
+#project .project-thumb .project-overlay {
   background: linear-gradient(to bottom, #e66f6e 0%, #16c024 100%);
   top: 0;
   left: 0;
@@ -391,7 +392,7 @@ h5 {
   padding-top: 45px;
   transition: all 0.4s ease-in-out;
 }
-#portfolio .portfolio-thumb:hover .portfolio-overlay {
+#project .project-thumb:hover .project-overlay {
   cursor: pointer;
   opacity: 0.8;
   transform: scale(0.9);
@@ -480,9 +481,7 @@ h5 {
   color: #fff;
 }
 
-#portfolio {
-  padding: 20px 0;
-}
+
 
 .container {
   width: 90%;
@@ -497,14 +496,14 @@ h5 {
   margin-bottom: 30px;
 }
 
-/* Grid system for the projects */
+
 .projects-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 20px;
 }
 
-/* Card styles */
+
 .card {
   background-color: #fff;
   border-radius: 10px;
@@ -528,33 +527,34 @@ h5 {
   -webkit-mask-composite: xor;
   mask-composite: exclude;
 }
-.card:hover {
-  transform: translateY(-10px);
-}
-
 .card-image img {
   width: 100%;
-  height: auto;
+  height: 100% !important;
+  object-fit: cover;
 }
 
 .card-contents {
-  padding: 15px;
+  padding: 0 15px;
+  position: relative;
 }
 
 .card-title {
   font-size: 1.5em;
   margin-bottom: 10px;
+  color: rgb(17 94 89);
 }
 
 .project-description {
+  font-family: 'Inter', sans-serif;
   font-size: 1em;
   color: #666;
-  margin-bottom: 15px;
+  font-weight: 500;
 }
 
 .card-actions {
-  display: flex;
-  justify-content: flex-start;
+  position: absolute;
+  top: 0px;
+  right: 5px;
 }
 
 .card-actions .link {
@@ -567,7 +567,6 @@ h5 {
   color: #0056b3;
 }
 
-/* Responsive adjustments */
 @media (max-width: 900px) {
   .projects-grid {
     grid-template-columns: repeat(2, 1fr);
