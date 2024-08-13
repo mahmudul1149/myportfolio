@@ -30,14 +30,14 @@ li {
 #loader {
   position: absolute;
   top: 50%;
-  left: 50%;
+  left: 45%;
   width: 48px;
   height: 48px;
   border: 5px solid #fff;
   border-bottom-color: #ff3d00;
   border-radius: 50%;
   display: inline-block;
-  box-sizing: border-box;
+  /* box-sizing: border-box; */
   animation: rotation 1s linear infinite;
 }
 
@@ -130,6 +130,7 @@ li {
   height: 70px;
   align-items: center;
   justify-content: space-between;
+  padding: 0 10px;
 }
 .flex-contact {
   display: flex;
@@ -140,6 +141,7 @@ li {
   display: flex;
   align-items: center;
   gap: 1rem;
+  margin-top: 0.8rem;
 }
 
 .nav-links a {
@@ -151,49 +153,53 @@ li {
   color: rgb(17 94 89);
 }
 
-/* NAVBAR MENU */
-.menu {
-  display: flex;
-  gap: 1em;
-  font-size: 18px;
-}
-.menu li a:hover {
-  text-decoration: none;
-
-  color: #8765fa;
-  border-radius: 5px;
-}
-.menu li {
-  padding: 5px 14px;
-}
-/* DROPDOWN MENU */
-.services {
-  position: relative;
-}
-.dropdown {
-  background-color: rgb(1, 139, 139);
-  padding: 1em 0;
-  position: absolute; /*WITH RESPECT TO PARENT*/
+.hamburger {
   display: none;
-  border-radius: 8px;
-  top: 35px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
 }
-.dropdown li + li {
-  margin-top: 10px;
+.mobile-menu {
+  padding-top: 3.4rem;
+  padding-bottom: 1rem;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #F6F8F8;
+  padding: 0;
+  margin: 0;
+  z-index: 100000;
+  overflow-x: hidden;
+  display: none;
+
 }
-.dropdown li {
-  padding: 0.5em 1em;
-  width: 8em;
-  text-align: center;
+
+.mobile-menu .border-b {
+  border-bottom: 1px solid #e8e6e6 !important;
 }
-.dropdown li:hover {
-  background-color: #4c9e9e;
+
+
+
+.mobile-menu .navigate-link {
+  font-family: 'Montserrat Alternates', sans-serif !important;
+  font-size: 16px;
+  padding: 0.8rem 0;
 }
-.services:hover .dropdown {
-  display: block;
+
+.mobile-menu .navigate-link a {
+  color: #121212;
+  font-weight: 500;
+  text-decoration: none;
 }
-/*RESPONSIVE NAVBAR MENU STARTS*/
-/* CHECKBOX HACK */
+
+.mobile-menu .flex-links {
+  display: flex;
+  flex-direction: column;
+}
+
+
 input[type="checkbox"] {
   display: none;
 }
@@ -206,45 +212,22 @@ input[type="checkbox"] {
   cursor: pointer;
 }
 /* APPLYING MEDIA QUERIES */
-@media (max-width: 768px) {
-  .menu {
-    display: none;
-    position: absolute;
-    background-color: teal;
-    width: 500px;
-    right: 0;
-    z-index: 9999;
-    left: 0;
-    text-align: left;
-    padding: 16px 30px;
-  }
-  .menu li:hover {
-    display: inline-block;
-    background-color: #4c9e9e;
-    transition: 0.3s ease;
-  }
-
-  .menu li + li {
-    margin-top: 12px;
-  }
-
-  input[type="checkbox"]:checked ~ .menu {
-    display: block;
-  }
+@media (max-width: 639px) {
+ 
   .hamburger {
     display: block;
-    margin-right: 60px;
   }
-  .logo {
-    margin-right: 150px !important;
+  .navbar .flex-links {
+    display: none;
   }
-  .dropdown {
-    left: 50%;
-    top: 30px;
-    transform: translateX(20%);
+  .mobile-menu {
+    display: none;
   }
-  .dropdown li:hover {
-    background-color: #4c9e9e;
+  .loader {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: red;
   }
 }
 .container-tec {
