@@ -14,3 +14,22 @@ document.getElementById('downloadResume').addEventListener('click', function() {
   link.download = 'Mahmudul_Resume.pdf'; // The name of the file once downloaded
   link.click();
 });
+const hamburger = document.querySelector('.hamburger');
+const mobileMenu = document.querySelector('.mobile-menu');
+const closeIcon = document.querySelector('.close-icon');
+
+hamburger.addEventListener('click', () => {
+    mobileMenu.style.display = 'block';
+});
+
+closeIcon.addEventListener('click', () => {
+    mobileMenu.style.display = 'none';
+});
+const navLinks = document.querySelectorAll('.mobile-menu .navigate-link a');
+
+navLinks.forEach(link => {
+    link.addEventListener('click', () => {
+        mobileMenu.style.display = 'none';
+    });
+});
+
