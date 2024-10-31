@@ -14,13 +14,11 @@ li {
   color: white;
   font-weight: 400;
   display: block;
-  font-family: Nunito, sans-serif;
 }
 .text-container .clone {
   color: #000000;
   font-weight: 700;
   font-size: 24px;
-  font-family: Poppins, sans-serif;
   text-transform: uppercase;
   display: block;
 }
@@ -87,12 +85,13 @@ li {
 .resume-button {
   margin-top: 2rem;
   color: #fff;
-  background-color: black;
+  background-color: #8B5CF6;
   padding: 10px 20px;
   font-size: 18px;
   border-radius: 5px;
   cursor: pointer;
   transition: background-color 0.3s ease;
+  border: none;
 }
 .nav {
   max-width: 1200px;
@@ -108,20 +107,12 @@ li {
   overflow: hidden;
 }
 .navbar .logo {
-  font-family: "Grey Qo", cursive;
-  font-size: 3.5rem;
-  font-weight: 500;
-  letter-spacing: 0.3px;
-  background: -webkit-linear-gradient(
-    90deg,
-    rgba(13, 8, 96, 1) 0%,
-    rgba(9, 9, 121, 1) 21%,
-    rgba(6, 84, 170, 1) 51%,
-    rgba(0, 255, 113, 1) 100%
-  );
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  max-width: max-content;
+  font-size: 28px;
+  text-transform: uppercase;
+	background: linear-gradient(to right, #30CFD0 0%, #330867 100%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+  font-weight: 600;
 }
 .navbar .nav-container {
   max-width: 1200px;
@@ -145,12 +136,10 @@ li {
 }
 
 .nav-links a {
-  font-family: "Inter", sans-serif;
   font-size: 18px;
-  font-weight: 600;
-  opacity: 0.7;
+  font-weight: 500;
   letter-spacing: 0.3px;
-  color: rgb(17 94 89);
+  color: black;
 }
 
 .hamburger {
@@ -183,7 +172,6 @@ li {
 
 
 .mobile-menu .navigate-link {
-  font-family: 'Montserrat Alternates', sans-serif !important;
   font-size: 16px;
   padding: 0.8rem 0;
 }
@@ -278,7 +266,6 @@ input[type="checkbox"] {
   list-style: none;
 }
 .items ul li {
-  font-family: "Inter", sans-serif;
   font-weight: 500;
   line-height: 2;
   font-size: 18px;
@@ -307,6 +294,10 @@ input[type="checkbox"] {
   .flex-contact {
     flex-direction: column;
     align-items: center;
+  }
+  #home img {
+   width: 100%;
+   margin-top: 2rem;
   }
 }
 @media (max-width: 450px) {
@@ -431,7 +422,6 @@ footer .flex {
 }
 footer .flex p {
   color: #115e59;
-  font-family: "Inter", sans-serif !important;
   text-align: center;
   font-weight: 500;
   font-size: 1rem;

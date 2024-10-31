@@ -1,11 +1,14 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Pacifico&family=Righteous&display=swap");
-/* font-family: 'Inter', sans-serif;
-font-family: 'Montserrat', sans-serif;
-font-family: 'Montserrat Alternates', sans-serif;
-font-family: 'Righteous', cursive; */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6, p, button, li, a {
+    font-family: 'Montserrat', sans-serif;
+}
 body {
   background: #E7E5DF !important;
-  font-family: "Poppins", sans-serif;
 }
 html,
 article,
@@ -82,7 +85,6 @@ h5 {
   padding-bottom: 3rem !important;
 }
 .section-title {
-  font-family: 'Montserrat Alternates', sans-serif;
   color: #115e59;
   text-align: center;
 }
@@ -213,57 +215,29 @@ h5 {
   text-align: left;
 }
 .text-gradient-color {
-  font-family: "Inter", sans-serif;
-  color: rgb(17 94 89);
-  opacity: 0.7;
-  /* background: linear-gradient(
-    90.42deg,
-    rgb(74, 177, 241) 0.58%,
-    rgb(86, 108, 236) 37.22%,
-    rgb(215, 73, 175) 73.87%,
-    rgb(255, 124, 81) 112.26%
-  );
-  background-clip: text;
-  color: transparent;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent; */
-  font-size: 60px;
-  font-weight: 800;
-  line-height: 60px;
-  margin-bottom: 20px !important;
-}
-.text-gradients {
-  font-family: "Inter", sans-serif;
-
   background: linear-gradient(
-    to right,
-    rgb(255, 23, 23),
-    yellow,
-    rgb(13, 246, 13)
+    to right, 
+    hsl(98, 58%, 41%), 
+    hsl(204 100% 59%)
   );
-  background-clip: text;
-  color: transparent;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  font-size: 60px;
-  font-weight: 800;
-  line-height: 60px;
+  font-size: 40px;
+  font-weight: 600;
+  margin-top: 0px !important;
 }
 .rotate {
   height: 1rem;
 }
 #home h2 {
-  font-family: "Montserrat", sans-serif;
   font-size: 25px;
   font-weight: 600;
   opacity: 0.9;
   color: black;
 }
 #home h3 {
-  font-family: poppins, sans-serif;
-  font-size: 40px;
+  font-size: 30px;
   font-weight: 700;
-  line-height: 40px;
   color: black
   ;
 }
@@ -284,7 +258,6 @@ h5 {
   border-color: transparent;
 }
 #home p {
-  font-family: poppins, sans-serif;
   font-size: 18px;
   color: rgb(81, 76, 76);
   line-height: 1.6;
@@ -302,10 +275,6 @@ h5 {
   #home {
     padding-bottom: 40px;
     height: auto !important;
-  }
-  #home h1 {
-    font-size: 2.5rem;
-    line-height: 1;
   }
   #home .grid {
     grid-template-columns: 1fr;
@@ -361,7 +330,6 @@ h5 {
   padding-bottom: 6px;
 }
 #about p {
-  font-family: "Inter", sans-serif;
   font-size: 21px;
   letter-spacing: -0.3px;
   opacity: 0.8;
@@ -404,14 +372,12 @@ h5 {
 }
 
 #contact .contact-title {
-  font-family: "Poppins", sans-serif;
   font-size: 30px;
   font-weight: bold;
   padding-bottom: 20px;
   color: #ffffff;
 }
 #contact p {
-  font-family: "Inter", sans-serif;
   color: rgba(255, 255, 255, 0.556);
   font-weight: 300;
   font-size: 1.2rem;
@@ -436,7 +402,6 @@ h5 {
   border: 1px solid transparent;
 }
 #contact .description {
-  font-family: "Poppins", sans-serif;
   font-size: 18px;
   font-weight: 500;
   padding-bottom: 20px;
@@ -484,7 +449,7 @@ h5 {
 
 
 .container {
-  width: 90%;
+  width: 100%;
   max-width: 1200px;
   margin: 0 auto;
 }
@@ -545,7 +510,6 @@ h5 {
 }
 
 .project-description {
-  font-family: 'Inter', sans-serif;
   font-size: 1em;
   color: #666;
   font-weight: 500;
